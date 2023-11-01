@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Input Example</title>
+</head>
+<body>
+    <h1>Input Example</h1>
+    
+    <label for="userInput">Enter something:</label>
+    <input type="text" id="userInput" placeholder="Type here">
+    <button id="submitButton">Submit</button>
+    
+    <div id="output"></div>
+    
+    <script>
+        document.getElementById("submitButton").addEventListener("click", function() {
+            var userInput = document.getElementById("userInput").value;
+            var outputDiv = document.getElementById("output");
+            outputDiv.innerHTML = "You entered: " + userInput;
+        });
+    </script>
+</body>
+</html>
